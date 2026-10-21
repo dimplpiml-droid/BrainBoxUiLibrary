@@ -36,11 +36,35 @@ val WelcomeTitleStyle = TextStyle(
     fontWeight = FontWeight.Bold,
     fontSize = 40.sp,
     color = PrimaryText
-    )
+)
 val UrbanistButtonTextStyle = TextStyle(
     fontFamily = UrbanistFontFamily,
     fontWeight = FontWeight.Bold,
     fontSize = 18.sp,
     color = Surface
+)
+val GoogleTextStyle = TextStyle(
+    fontFamily = PoppinsFontFamily,
+    fontWeight = FontWeight.SemiBold,
+    fontSize = 14.sp,
+    color = GoogleText
+)
+val FacebookTextStyle = TextStyle(
+    fontFamily = PoppinsFontFamily,
+    fontWeight = FontWeight.SemiBold,
+    fontSize = 14.sp,
+    color = FacebookText
+)
+val TextLinkSign = TextStyle(
+fontFamily = PoppinsFontFamily,
+    fontWeight = FontWeight.SemiBold,
+    fontSize = 16.sp,
+    color = PrimaryText
+)
+val TextLinkSkip = TextStyle(
+fontFamily = PoppinsFontFamily,
+    fontWeight = FontWeight.SemiBold,
+    fontSize = 18.sp,
+    color = SkipText
 )
 
