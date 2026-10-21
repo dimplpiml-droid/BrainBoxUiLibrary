@@ -8,7 +8,7 @@ import ru.example.brainbox.uikit.ui.theme.PrimaryButton
 import ru.example.brainbox.uikit.ui.theme.TextLinkSign
 
 @Composable
-fun BrainBoxTextButton(text: String, onClick: () -> Unit){
+fun BrainBoxTextLink(text: String, onClick: () -> Unit){
         Text(
             text = text,
             modifier = Modifier.clickable(onClick = onClick),
