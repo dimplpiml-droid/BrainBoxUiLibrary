@@ -6,6 +6,8 @@
 
 ## 🛠 Содержимое библиотеки
 
+### uikit/src/main/java/ru/example/brainbox/uikit/ui/theme
+
 Библиотека построена на базе Jetpack Compose и Material 3 и включает в себя:
 * **Theme & Typography**: Фирменная цветовая палитра, кастомные шрифты (`Poppins`, `Urbanist`) и стили текста (`Theme.kt`, `Color.kt`, `Type.kt`).
 * **Components (`components/`)**:
