@@ -24,7 +24,7 @@ fun BrainBoxOutlineTextField(
     leadingIcon: @Composable ((tint: Color) -> Unit)? = null,
     trailingIcon: @Composable (() -> Unit)? = null,
     placeholder: String,
-    isPassword: Boolean = false
+    visualTransformation: VisualTransformation = VisualTransformation.None
 ) {
     val isFilled = value.isNotEmpty()
     val iconColor = if (isFilled) PrimaryText else MutedText
@@ -43,11 +43,7 @@ fun BrainBoxOutlineTextField(
             null
         },
         trailingIcon = trailingIcon,
-        visualTransformation = if (isPassword) {
-            PasswordVisualTransformation()
-        } else {
-            VisualTransformation.None
-        },
+        visualTransformation = visualTransformation,
         placeholder = {
             Text(
                 text = placeholder,
