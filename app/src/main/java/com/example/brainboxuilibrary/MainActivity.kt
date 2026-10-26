@@ -45,6 +45,10 @@ class MainActivity : ComponentActivity() {
                     Column(modifier = Modifier
                         .padding(innerPadding)
                         .padding(horizontal = 35.dp)) {
+                        Spacer(modifier = Modifier.padding(10.dp))
+                        BrainBoxBackButton(onClick = {}, )
+                        Spacer(modifier = Modifier.padding(10.dp))
+
                         BrainBoxButton(
                             onClick = {},
                             text = " Log in",
@@ -137,8 +141,6 @@ class MainActivity : ComponentActivity() {
                         }
                         Spacer(modifier = Modifier.padding(10.dp))
                         BrainBoxTextSkip(onClick = {})
-                        Spacer(modifier = Modifier.padding(10.dp))
-                        BrainBoxBackButton(onClick = {}, )
                     }
                 }
             }

@@ -4,6 +4,7 @@ import android.R
 import androidx.compose.foundation.clickable
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import ru.example.brainbox.uikit.ui.theme.PrimaryButton
 import ru.example.brainbox.uikit.ui.theme.SkipText
@@ -22,10 +23,11 @@ fun BrainBoxTextLink(text: String, onClick: () -> Unit){
 
 @Composable
 fun BrainBoxTextSkip(
-    onClick: () -> Unit
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier
 ) {
     Text(
         text = "Skip",
-        modifier = Modifier.clickable(onClick = onClick),
+        modifier = modifier.clickable(onClick = onClick),
         style = TextLinkSkip,)
 }
