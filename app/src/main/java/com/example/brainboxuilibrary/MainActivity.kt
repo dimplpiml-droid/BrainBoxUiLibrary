@@ -143,18 +143,23 @@ class MainActivity : ComponentActivity() {
                         Spacer(modifier = Modifier.padding(10.dp))
                         BrainBoxTextSkip(onClick = {})
 
+                        Spacer(modifier = Modifier.padding(10.dp))
+
+                        var selectedMethod by remember { mutableStateOf("") }
                         CardForgetPassword(image = painterResource(com.example.uikit.R.drawable.ic_black_email),
                             mainText = "Email",
-                            secondaryText = "Code Send to your email"
+                            secondaryText = "Code Send to your email",
+                            isSelected = selectedMethod == "email",
+                            onClick = {selectedMethod = "email"}
                         )
 
                         Spacer(modifier = Modifier.padding(10.dp))
 
-                        Spacer(modifier = Modifier.padding(bottom = 25.dp))
-
                         CardForgetPassword(image = painterResource(R.drawable.ic_black_phone),
                             mainText = "Phone}",
-                            secondaryText = "Code Send to your email"
+                            secondaryText = "Code Send to your email",
+                            isSelected = selectedMethod == "phone",
+                            onClick = {selectedMethod = "phone"}
                         )
                     }
                 }

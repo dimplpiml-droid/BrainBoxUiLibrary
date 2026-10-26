@@ -17,11 +17,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.uikit.R
-import ru.example.brainbox.uikit.ui.theme.MutedText
 import ru.example.brainbox.uikit.ui.theme.NavigatorCard
 import ru.example.brainbox.uikit.ui.theme.NestButton
 import ru.example.brainbox.uikit.ui.theme.PrevButton
-import ru.example.brainbox.uikit.ui.theme.PrimaryText
 import ru.example.brainbox.uikit.ui.theme.VerticalStick
 
 @Composable
