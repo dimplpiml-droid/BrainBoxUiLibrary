@@ -12,7 +12,6 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.getValue
@@ -22,6 +21,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import com.example.uikit.R
 import ru.example.brainbox.uikit.ui.theme.BrainBoxTheme
 import ru.example.brainbox.uikit.ui.theme.SecondaryButtonText
 import ru.example.brainbox.uikit.ui.theme.components.BrainBoxBackButton
@@ -33,6 +33,7 @@ import ru.example.brainbox.uikit.ui.theme.components.ButtonShape
 import ru.example.brainbox.uikit.ui.theme.components.BrainBoxSocialButton
 import ru.example.brainbox.uikit.ui.theme.components.BrainBoxTextLink
 import ru.example.brainbox.uikit.ui.theme.components.BrainBoxTextSkip
+import ru.example.brainbox.uikit.ui.theme.components.CardForgetPassword
 import ru.example.brainbox.uikit.ui.theme.components.SocialMedia
 
 class MainActivity : ComponentActivity() {
@@ -76,7 +77,7 @@ class MainActivity : ComponentActivity() {
                             leadingIcon = { tintColor ->
                                 Icon(
                                     painter = painterResource(id = com.example.uikit.R.drawable.ic_email),
-                                    contentDescription = "Email Icon",
+                                    contentDescription = "Email Icons",
                                     tint = tintColor
                                 )
                             },
@@ -92,13 +93,13 @@ class MainActivity : ComponentActivity() {
                             trailingIcon = {
                                 Icon(
                                     painter = painterResource(id = com.example.uikit.R.drawable.ic_eye_off),
-                                    contentDescription = "Password Icon",
+                                    contentDescription = "Passwords Icon",
                                 )
                             },
                             leadingIcon = {
                                 Icon(
                                     painter = painterResource(id = com.example.uikit.R.drawable.ic_lock),
-                                    contentDescription = "Password Icon",
+                                    contentDescription = "Passwords Icon",
                                     tint = it
                                 )
                             }
@@ -141,6 +142,20 @@ class MainActivity : ComponentActivity() {
                         }
                         Spacer(modifier = Modifier.padding(10.dp))
                         BrainBoxTextSkip(onClick = {})
+
+                        CardForgetPassword(image = painterResource(com.example.uikit.R.drawable.ic_black_email),
+                            mainText = "Email",
+                            secondaryText = "Code Send to your email"
+                        )
+
+                        Spacer(modifier = Modifier.padding(10.dp))
+
+                        Spacer(modifier = Modifier.padding(bottom = 25.dp))
+
+                        CardForgetPassword(image = painterResource(R.drawable.ic_black_phone),
+                            mainText = "Phone}",
+                            secondaryText = "Code Send to your email"
+                        )
                     }
                 }
             }
